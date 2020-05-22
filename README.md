@@ -62,9 +62,6 @@ Use Genre with Tags.  Used in Step #2.  Indicates whether you want to use just T
 Delay the evaluation...  Enable this if you are experiencing a problem where the video is restarting itself.  This is left over from Language Preference Manager and mainly seemed to be due to changing audiostreams, so it shouldn't be necessary.  The old default was 500 (half a second) if you need to try it.
 
 ---
-### Disclaimers
-
----
 ## Limitations compared to Language Preference Manager
 
 * It does not change the audiostream.
