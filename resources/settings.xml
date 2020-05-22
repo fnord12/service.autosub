@@ -7,7 +7,7 @@
 		<setting label="Words separated by commas (no space after comma):" type="lsep"/>
 		<setting id="forcedEmbdInd" type="text" label="Embedded Forced Sub Indicator:" default="Forced,Foreign,Partial,Alien,Fantasy,Elvish,Elf,Signs,Lyrics" />
 		<setting label="Tags separated by commas (no space after comma):" type="lsep"/>
-		<setting id="TagActivators" type="text" label="Enable subtitles for these tags:" default="subtitled,anime,masala,kung fu,samurai,kaiju" />
+		<setting id="TagActivators" type="text" label="Enable subtitles for these tags:" default="subtitled,anime,kung fu,samurai,kaiju" />
 	</category>
 	
 	<category label="30115">
