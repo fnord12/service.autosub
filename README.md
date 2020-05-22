@@ -64,9 +64,8 @@ A forced subtitle is for when the audiostream is in your preferred language(s) b
 * Make sure you rename your external subs to match the External Forced Sub Indicator.
 
 ---
-## Caveats
+## Caveats:
 
----
 ### Limitations compared to Language Preference Manager
 
 * It does not change the audiostream.
