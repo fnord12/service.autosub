@@ -44,22 +44,22 @@ A forced subtitle is for when the audiostream is in your preferred language(s) b
 * Take a look at the current settings (you will find it under My Addons > Services) and revise as needed:
 
 	* SUB PREFERENCES
-		*P referred Language(s).  Input the three letter language codes of your preferred languages, separated by a comma.  If audio is in a preferred language, the service will only try to enable forced subtitles.  And the order of your preferred languages helps determine which subtitle to enable.
+		* __Preferred Language(s).__  Input the three letter language codes of your preferred languages, separated by a comma.  If audio is in a preferred language, the service will only try to enable forced subtitles.  And the order of your preferred languages helps determine which subtitle to enable.
 
-		* External Forced Sub Indicator.  Input a single three letter language code that will indicate that an external subtitle.  If you enter "ful", then your external sub files should be "MovieName.ful.srt".
+		* __External Forced Sub Indicator.__  Input a single three letter language code that will indicate that an external subtitle.  If you enter "ful", then your external sub files should be "MovieName.ful.srt".
 
-		* Embedded Forced Sub Indicator.  Input words that might indicate that an embedded subtitle is forced.  The search will check all cases (e.g. foreign, Foreign, FOREIGN) and will find partial matches, (e.g. "Foreign" will find "Foreign Parts Only").
+		* __Embedded Forced Sub Indicator.__  Input words that might indicate that an embedded subtitle is forced.  The search will check all cases (e.g. foreign, Foreign, FOREIGN) and will find partial matches, (e.g. "Foreign" will find "Foreign Parts Only").
 
-		* Enable subtitles for these tags.  Input the tag names and/or genres that indicate that a subtitle should be enabled.  Note that the subtitle will still only be enabled if the audiostream is unknown (see the algorithm).  If you don't want to use tags, you can set "Use Genre with Tags" to None rather than delete the defaults.
+		* __Enable subtitles for these tags.__  Input the tag names and/or genres that indicate that a subtitle should be enabled.  Note that the subtitle will still only be enabled if the audiostream is unknown (see the algorithm).  If you don't want to use tags, you can set "Use Genre with Tags" to None rather than delete the defaults.
 
 	* ADVANCED
-		* Log level.  Affects whether information will be written to the log all the time, or just when Debug mode is on, or only when there's an error.  Leave it alone, probably.
+		* __Log level.__  Affects whether information will be written to the log all the time, or just when Debug mode is on, or only when there's an error.  Leave it alone, probably.
 
-		* Turn off subtitles if no subtitle preference matched.  Explicitly turn off subtitles if the conditions in the algorithm aren't met.  Otherwise it will leave them in whatever state they were in when you last played the file (standard Kodi behavior).  Try turning this off if Caveat #4 is causing you problems.
+		* __Turn off subtitles if no subtitle preference matched.__  Explicitly turn off subtitles if the conditions in the algorithm aren't met.  Otherwise it will leave them in whatever state they were in when you last played the file (standard Kodi behavior).  Try turning this off if Caveat #4 is causing you problems.
 
-		* Use Genre with Tags.  Used in Step #2.  Indicates whether you want to use just Tags, just Genres, Both, or Neither (skips step #2).
+		* __Use Genre with Tags.__  Used in Step #2.  Indicates whether you want to use just Tags, just Genres, Both, or Neither (skips step #2).
 
-		* Delay the evaluation...  Enable this if you are experiencing a problem where the video is restarting itself.  This is left over from Language Preference Manager and mainly seemed to be due to changing audiostreams, so it shouldn't be necessary.  The old default was 500 (half a second) if you need to try it.
+		* __Delay the evaluation.__..  Enable this if you are experiencing a problem where the video is restarting itself.  This is left over from Language Preference Manager and mainly seemed to be due to changing audiostreams, so it shouldn't be necessary.  The old default was 500 (half a second) if you need to try it.
 
 * Make sure you rename your external subs to match the External Forced Sub Indicator.
 
