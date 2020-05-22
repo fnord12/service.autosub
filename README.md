@@ -6,7 +6,7 @@ AutoSub for Kodi
 ![screenshot](https://github.com/fnord12/service.autosub/blob/master/resources/fanart.jpg)
 
 ## What is it?
-A service for Kodi that automatically enables subtitles based on your preferences.  This is a rework of Language Preference Manager, but instead of being as open and flexible as that program, it takes a more prescriptive approach that works for a common use case (and is easier to configure/troubleshoot).
+A service for Kodi that automatically enables subtitles based on your preferences.  This is a rework of Language Preference Manager by Ace, but instead of being as open and flexible as that program, it takes a more prescriptive approach that works for a common use case (and is easier to configure/troubleshoot).
 
 ---
 ## Algorithm
