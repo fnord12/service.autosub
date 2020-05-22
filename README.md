@@ -8,6 +8,8 @@ AutoSub for Kodi
 ## What is it?
 A service for Kodi that automatically enables subtitles based on your preferences.  This is a rework of Language Preference Manager by Ace, but instead of being as open and flexible as that program, it takes a more prescriptive approach that works for a common use case (mine! :smiley: ) and is easier to configure/troubleshoot.
 
+In addition to providing a straightforward algorithm, it attempts to address the problem of Undetermined audiostream and subtitles, and has a (hacky) way of identifying external forced subtitles (which otherwise isn't possible).  It also improves on Language Preference Manager by looking at the TVShow tags when dealing with episodes (since episodes can't be tagged).
+
 ---
 ## Algorithm
 The service takes the following approach, in this order:
