@@ -21,7 +21,7 @@ The service takes the following approach, in this order:
 4. If no external forced subtitle is found, it will look for an embedded forced subtitle.
 
 ---
-### Best Subtitle
+## Best Subtitle
 What is a best subtitle in steps #1 and #2?
 
 * It will try to find a subtitle that matches your preferred languages, in priority order.  Failing that, it will take the first Undetermined subtitle.
@@ -62,7 +62,10 @@ Use Genre with Tags.  Used in Step #2.  Indicates whether you want to use just T
 Delay the evaluation...  Enable this if you are experiencing a problem where the video is restarting itself.  This is left over from Language Preference Manager and mainly seemed to be due to changing audiostreams, so it shouldn't be necessary.  The old default was 500 (half a second) if you need to try it.
 
 ---
-### Limitations compared to Language Preference Manager
+### Disclaimers
+
+---
+## Limitations compared to Language Preference Manager
 
 * It does not change the audiostream.
 
@@ -71,7 +74,7 @@ Delay the evaluation...  Enable this if you are experiencing a problem where the
 * It won't enable subtitles based on tag/genre alone.  (This could be adjusted fairly easily; let me know if you need it.)
 
 ---
-### Caveats/Challenges
+## Caveats/Challenges
 
 1. Unfortunaely, Kodi's JSON query returns a subtitles Name, Language, and Index, but not the Forced flag.  Therefore, embedded forced subtitles can only be guessed based on the Name.  Hence the Embedded Forced Sub Indicator setting.  The default settings include every Name i could think of, but if you encounter something else you can add it.  But that's still dependent on a Name having been input at all when the video file was created.  You can use something like MKVToolNix to add a name to a video file if necessary.
 
@@ -82,7 +85,7 @@ Delay the evaluation...  Enable this if you are experiencing a problem where the
 4. The only available Kodi function to trigger this is OnAVChange, and unfortunately Kodi counts seeking as an AVChange.  That means every time you rewind, etc., the algorithm will attempt to reapply itself.  That's not a problem if you're happy with what subtitle it is picking, but if you've manually changed the subtitle, you will have to manually change it again after seeking.
 
 ---
-### Warnings
+## Warnings
 
 Tested in Kodi 18 Leia only.  Tested with local files only (not with streaming, not with SMBs).  It should still work in other cases; i just don't know.
 
