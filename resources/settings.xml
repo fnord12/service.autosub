@@ -1,0 +1,20 @@
+<settings>
+	<category label="30105">
+		<setting label="Three letter codes separated by commas (no space after comma):" type="lsep"/>
+		<setting id="preferredLang" type="text" label="Preferred Language(s):" default="eng" />
+		<setting label="A single three letter code, must be real language recognized by Kodi:" type="lsep"/>
+		<setting id="forcedExtInd" type="text" label="External Forced Sub Indicator:" default="ful" />
+		<setting label="Words separated by commas (no space after comma):" type="lsep"/>
+		<setting id="forcedEmbdInd" type="text" label="Embedded Forced Sub Indicator:" default="Forced,Foreign,Partial,Alien,Fantasy,Elvish,Elf,Signs,Lyrics" />
+		<setting label="Tags separated by commas (no space after comma):" type="lsep"/>
+		<setting id="TagActivators" type="text" label="Enable subtitles for these tags:" default="subtitled,anime,masala,kung fu,samurai,kaiju" />
+	</category>
+	
+	<category label="30115">
+		<setting id="log_level" label="Log level" option="hidden" type="enum" values="NONE|ERROR|INFO|DEBUG" default="1"/>
+		<setting id="turnSubsOff" label="30114" type="bool" default="true"/>
+		<setting id="useGenre" label="Use Genres with Tags" type="enum" default="Tags" values="Tags|Genre|Both|None"/>
+		<setting id="delay" label="30112" type="number" default="25"/>
+		<setting id="pause" label="30109" type="bool" default="false" visible="false"/>
+	</category>
+</settings>

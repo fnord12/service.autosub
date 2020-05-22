@@ -1,0 +1,57 @@
+--- Version 0.0.9
+
+- Overhaul: Streamlined to remove flexibility but provide an understandable path
+
+
+--- Version 0.0.8
+
+- Fix compatibility with leia
+- Added support for forced subtitles (ability to choose between normal or forced, in UI and conditional settings
+
+--- Version 0.0.7
+
+- ?
+
+--- Version 0.0.6
+
+- Fix compatibility with jarvis and krypton
+
+--- Version 0.0.5
+
+- Added support for multiple 3 digit codes per language (thanks to waven!)
+
+--- Version 0.0.4
+
+- Added a language called "None". If set as a conditinal subtitle language
+	subtitles get disabled if the audio language matches.
+
+- Added support for per genre/tag custom preferences. Syntax is 
+	tag/genre1,tag/genre2...#(custom pref; see below)|tag/genre3,tag/genre4...#(custom pref; see below)
+	If no genre/tag# part is provided the pref gets evaluated for any genre/tag
+
+--- Version 0.0.3
+
+- Custom preferences. Syntax is lang1>lang2>lang3>... for audio and sub 
+							and lang1:lang2>lang3:lang4>... for cond. subs
+- Wanilton's Portuguese (Brazil) translation, thanks!
+- schumi2004's Dutch translation, thanks!
+
+[fixes]
+subtitle preferences
+use file name tracks regardless of other settings, if enabled
+
+--- Version 0.0.2
+
+- A switch to enable subtitles if a preference matched.
+- A switch to disable subtitles if no subtitle preference matched.
+- The possibility to set the audio and/or subtitle track from the filename.
+	For example: matrix.audiostream_1.subtitle_2.avi
+
+[fixes]
+conditional preferences
+typos
+
+--- Version 0.0.1
+
+First version of Language Preference Manager.
+
