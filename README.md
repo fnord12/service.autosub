@@ -5,11 +5,11 @@ AutoSub for Kodi
 
 ![screenshot](https://github.com/fnord12/service.autosub/blob/master/resources/fanart.jpg)
 
-### What is it?
+## What is it?
 A service for Kodi that automatically enables subtitles based on your preferences.  This is a rework of Language Preference Manager, but instead of being as open and flexible as that program, it takes a more prescriptive approach that works for a common use case (and is easier to configure/troubleshoot).
 
 ---
-### Algorithm
+## Algorithm
 The service takes the following approach, in this order:
 
 1. Checks if the current audiostream is not one of your preferred languages and is NOT undefined.  If so, it enables the best subtitle (see below), avoiding forced subtitles.
@@ -21,7 +21,7 @@ The service takes the following approach, in this order:
 4. If no external forced subtitle is found, it will look for an embedded forced subtitle.
 
 ---
-## Best Subtitle
+### Best Subtitle
 What is a best subtitle in steps #1 and #2?
 
 * It will try to find a subtitle that matches your preferred languages, in priority order.  Failing that, it will take the first Undetermined subtitle.
@@ -29,7 +29,7 @@ What is a best subtitle in steps #1 and #2?
 * It will not pick a Forced subtitle, to the extent possible (see Caveats).
 
 ---
-## Forced Subtitles
+### Forced Subtitles
 A forced subtitle is for when the audiostream is in your preferred language(s) but there is dialogue (or text) that is not in that language.  This could be a foreign language or non-human language, or it might be a translation of signs or titlecards, or even song lyrics (especially for anime).
 
 * For external subtitles, they need to be renamed to match the External Forced Sub Indicator in the Settings.  Due to limitations (see Caveats #2), you need to pick a real language.  I've chosed the language Fula as the default (simply because it starts with F and isn't a common language for the videos i watch).  So your subtitle would need to be "MovieName.ful.srt".
@@ -37,7 +37,7 @@ A forced subtitle is for when the audiostream is in your preferred language(s) b
 * For embedded subtitles, they are determined based on Name.  See Caveats #1 for more.
 
 ---
-### Setup
+## Setup
 
 * Install the add-on (obviously)
 
@@ -62,7 +62,10 @@ Use Genre with Tags.  Used in Step #2.  Indicates whether you want to use just T
 Delay the evaluation...  Enable this if you are experiencing a problem where the video is restarting itself.  This is left over from Language Preference Manager and mainly seemed to be due to changing audiostreams, so it shouldn't be necessary.  The old default was 500 (half a second) if you need to try it.
 
 ---
-## Limitations compared to Language Preference Manager
+##Caveats
+
+---
+### Limitations compared to Language Preference Manager
 
 * It does not change the audiostream.
 
@@ -71,7 +74,7 @@ Delay the evaluation...  Enable this if you are experiencing a problem where the
 * It won't enable subtitles based on tag/genre alone.  (This could be adjusted fairly easily; let me know if you need it.)
 
 ---
-## Caveats/Challenges
+### Challenges
 
 1. Unfortunaely, Kodi's JSON query returns a subtitles Name, Language, and Index, but not the Forced flag.  Therefore, embedded forced subtitles can only be guessed based on the Name.  Hence the Embedded Forced Sub Indicator setting.  The default settings include every Name i could think of, but if you encounter something else you can add it.  But that's still dependent on a Name having been input at all when the video file was created.  You can use something like MKVToolNix to add a name to a video file if necessary.
 
@@ -82,7 +85,7 @@ Delay the evaluation...  Enable this if you are experiencing a problem where the
 4. The only available Kodi function to trigger this is OnAVChange, and unfortunately Kodi counts seeking as an AVChange.  That means every time you rewind, etc., the algorithm will attempt to reapply itself.  That's not a problem if you're happy with what subtitle it is picking, but if you've manually changed the subtitle, you will have to manually change it again after seeking.
 
 ---
-## Warnings
+### Warnings
 
 Tested in Kodi 18 Leia only.  Tested with local files only (not with streaming, not with SMBs).  It should still work in other cases; i just don't know.
 
