@@ -52,7 +52,7 @@ A forced subtitle is for when the audiostream is in your preferred language(s) b
 
 		* __Embedded Forced Sub Indicator.__  Input words that might indicate that an embedded subtitle is forced.  The search will check all cases (e.g. foreign, Foreign, FOREIGN) and will find partial matches, (e.g. "Foreign" will find "Foreign Parts Only").
 
-		* __Enable subtitles for these tags.__  Input the tag names and/or genres that indicate that a subtitle should be enabled.  Note that the subtitle will still only be enabled if the audiostream is unknown (see the algorithm).  If you don't want to use tags, you can set "Use Genre with Tags" to None rather than delete the defaults.
+		* __Enable subtitles for these tags.__  Input the tag names and/or genres that indicate that a subtitle should be enabled.  Note that the subtitle will still only be enabled if the audiostream is unknown (see the algorithm).  If you don't want to use tags, you can set "Use Genre with Tags" to None rather than delete the defaults.  Input your actual tag names in lowercase; spaces are ok.
 
 	* ADVANCED
 		* __Log level.__  Affects whether information will be written to the log all the time, or just when Debug mode is on, or only when there's an error.  Leave it alone, probably.
@@ -72,7 +72,7 @@ A forced subtitle is for when the audiostream is in your preferred language(s) b
 
 * It does not change the audiostream.
 
-* It does not allow different subtitles based on conditions (i.e. language A if tag is anime, language B is tag is something else).
+* It does not allow different subtitles based on conditions (i.e. language A if tag is anime, language B if something else).
 
 * It won't enable subtitles based on tag/genre alone.  (This could be adjusted fairly easily; let me know if you need it.)
 
