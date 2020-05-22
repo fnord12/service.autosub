@@ -32,11 +32,11 @@ What is a best subtitle in steps #1 and #2?
 
 ---
 ### Forced Subtitles
-A forced subtitle is for when the audiostream is in your preferred language(s) but there is dialogue (or text) that is not in that language.  This could be a foreign language or non-human language, or it might be a translation of signs or titlecards, or even song lyrics (especially for anime).
+A forced subtitle is for when the audiostream is in your preferred language(s) but there is dialogue (or text) that is not in that language.  This could be a "foreign" language or non-human fantasy language, or it might be a translation of signs or titlecards, or even song lyrics (especially for anime).
 
-* For external subtitles, they need to be renamed to match the External Forced Sub Indicator in the Settings.  Due to limitations (see Caveats #2), you need to pick a real language.  I've chosed the language Fula as the default (simply because it starts with F and isn't a common language for the videos i watch).  So your subtitle would need to be "MovieName.ful.srt".
+* For external subtitles, they need to be renamed to match the External Forced Sub Indicator in the Settings.  Due to limitations (see Challenge #2), you need to pick a real language.  I've chosed the language Fula as the default (simply because it starts with F and isn't a common language for the videos i watch).  So your subtitle would need to be "MovieName.ful.srt".
 
-* For embedded subtitles, they are determined based on Name.  See Caveats #1 for more.
+* For embedded subtitles, they are determined based on Name.  See Challenge #1 for more.
 
 ---
 ## Setup
@@ -57,7 +57,7 @@ A forced subtitle is for when the audiostream is in your preferred language(s) b
 	* ADVANCED
 		* __Log level.__  Affects whether information will be written to the log all the time, or just when Debug mode is on, or only when there's an error.  Leave it alone, probably.
 
-		* __Turn off subtitles if no subtitle preference matched.__  Explicitly turn off subtitles if the conditions in the algorithm aren't met.  Otherwise it will leave them in whatever state they were in when you last played the file (standard Kodi behavior).  Try turning this off if Caveat #4 is causing you problems.
+		* __Turn off subtitles if no subtitle preference matched.__  Explicitly turn off subtitles if the conditions in the algorithm aren't met.  Otherwise it will leave them in whatever state they were in when you last played the file (standard Kodi behavior).  Try turning this off if Challenge #4 is causing you problems.
 
 		* __Use Genre with Tags.__  Used in Step #2.  Indicates whether you want to use just Tags, just Genres, Both, or Neither (skips step #2).
 
@@ -79,7 +79,7 @@ A forced subtitle is for when the audiostream is in your preferred language(s) b
 ---
 ### Challenges
 
-1. Unfortunaely, Kodi's JSON query returns a subtitles Name, Language, and Index, but not the Forced flag.  Therefore, embedded forced subtitles can only be guessed based on the Name.  Hence the Embedded Forced Sub Indicator setting.  The default settings include every Name i could think of, but if you encounter something else you can add it.  But that's still dependent on a Name having been input at all when the video file was created.  You can use something like MKVToolNix to add a name to a video file if necessary.
+1. Unfortunaely, Kodi's JSON query returns a subtitle's Name, Language, and Index, but not the Forced flag.  Therefore, embedded forced subtitles can only be guessed based on the Name.  Hence the Embedded Forced Sub Indicator setting.  The default settings include every Name i could think of, but if you encounter something else you can add it.  But that's still dependent on a Name having been input at all when the video file was created.  You can use something like MKVToolNix to add a name to a video file if necessary.
 
 2. As noted above, for external forced subs, it must be a real language recognized by Kodi and listed in the langcodes.py file.  It can't (unfortunately) just be MovieName.forced.srt or something.
 
@@ -90,5 +90,5 @@ A forced subtitle is for when the audiostream is in your preferred language(s) b
 ---
 ### Warnings
 
-Tested in Kodi 18 Leia only.  Tested with local files only (not with streaming, not with SMBs).  It should still work in other cases; i just don't know.
+Tested in Kodi 18 Leia only.  Tested with local files only (not with streaming, not with SMBs).  It may still work in other cases (it should work to the same extent that Language Preference Manager did); i just can't test or troubleshoot.
 
