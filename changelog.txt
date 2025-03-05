@@ -1,6 +1,11 @@
---- Version 0.0.9
+--- Verion 1.0.1
+
+- Add Stop Tag support to prevent AutoSub from doing anything
+
+--- Version 1.0.0
 
 - Overhaul: Streamlined to remove flexibility but provide an understandable path
+- Rebranded as AutoSub
 
 
 --- Version 0.0.8

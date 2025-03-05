@@ -1,5 +1,6 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <settings>
-	<category label="30105">
+	<category label="Sub Preferences">
 		<setting label="Three letter codes separated by commas (no space after comma):" type="lsep"/>
 		<setting id="preferredLang" type="text" label="Preferred Language(s):" default="eng" />
 		<setting label="A single three letter code, must be real language recognized by Kodi:" type="lsep"/>
@@ -7,14 +8,14 @@
 		<setting label="Words separated by commas (no space after comma):" type="lsep"/>
 		<setting id="forcedEmbdInd" type="text" label="Embedded Forced Sub Indicator:" default="Forced,Foreign,Partial,Alien,Fantasy,Elvish,Elf,Signs,Lyrics" />
 		<setting label="Tags separated by commas (no space after comma):" type="lsep"/>
-		<setting id="TagActivators" type="text" label="Enable subtitles for these tags:" default="subtitled,anime,kung fu,samurai,kaiju" />
+		<setting id="TagActivators" type="text" label="Enable subtitles for these tags:" default="subtitled,anime,masala,kung fu,samurai,kaiju" />
+		<setting id="TagStoppers" type="text" label="A tag that will cause AutoSub to not do anything:" default="NoSub" />
 	</category>
 	
-	<category label="30115">
-		<setting id="log_level" label="Log level" option="hidden" type="enum" values="NONE|ERROR|INFO|DEBUG" default="1"/>
-		<setting id="turnSubsOff" label="30114" type="bool" default="true"/>
+	<category label="Advanced">
+		<setting id="turnSubsOff" label="Turn off subtitles if no subtitle preference matched" type="bool" default="true"/>
 		<setting id="useGenre" label="Use Genres with Tags" type="enum" default="Tags" values="Tags|Genre|Both|None"/>
-		<setting id="delay" label="30112" type="number" default="25"/>
-		<setting id="pause" label="30109" type="bool" default="false" visible="false"/>
+		<setting id="delay" label="Delay the evaluation by the following value [ms]" type="number" default="25"/>
+		<setting id="pause" label="Pause while evaluating preferences" type="bool" default="false" visible="false"/>
 	</category>
 </settings>

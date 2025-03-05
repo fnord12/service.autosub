@@ -6,12 +6,7 @@ class settings():
 
     def init(self):
         addon = xbmcaddon.Addon()
-        self.logLevel = addon.getSetting('log_level')
-        if self.logLevel and len(self.logLevel) > 0:
-            self.logLevel = int(self.logLevel)
-        else:
-            self.logLevel = LOG_INFO
-            
+        
         self.service_enabled = addon.getSetting('enabled') == 'true'
     
     def __init__( self ):
@@ -31,4 +26,5 @@ class settings():
       self.forcedExtInd = addon.getSetting('forcedExtInd')
       self.forcedEmbdInd = self.Convert(addon.getSetting('forcedEmbdInd'))
       self.preferredLang = self.Convert(addon.getSetting('preferredLang'))
-      self.TagActivators = self.Convert(addon.getSetting('TagActivators'))      
+      self.TagActivators = self.Convert(addon.getSetting('TagActivators'))
+      self.TagStoppers = self.Convert(addon.getSetting('TagStoppers'))      
